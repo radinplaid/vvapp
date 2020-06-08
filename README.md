@@ -2,6 +2,10 @@
 > A python library simplifying ipyvuetify voila application building.
 
 
+## Documentation
+
+https://radinplaid.github.io/vvapp/
+
 ## Install
 
 `pip install vvapp`
