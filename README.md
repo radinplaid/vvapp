@@ -23,7 +23,7 @@ There are a few key things to keep in mind when getting up and running with `vva
     * If `hint` is a callable, it must return a string or None; if it returns a string, the input is marked as invalid and the string is displayed
         
 
-```python
+```
 from vvapp.inputs import __all__ as available_input_widgets
 available_input_widgets
 ```
@@ -37,7 +37,7 @@ available_input_widgets
 
 ### password
 
-```python
+```
 from vvapp.inputs import password
 pw = password(label='Please enter a password',v_model='correcthorsebatterystapler')
 pw
@@ -48,7 +48,7 @@ pw
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
-```python
+```
 pw.v_model
 ```
 
@@ -59,7 +59,11 @@ pw.v_model
 
 
 
-```python
+Here we demonstrate the use of a function to validate the value of the input.
+
+In this example the password must be at least 12 characters, less than 64 characters and include at least one number:
+
+```
 import re
 def validate_pw(widget_value):
     if widget_value is None:
@@ -72,7 +76,7 @@ def validate_pw(widget_value):
         if len(widget_value) > 64:
             return 'Too Long!'
 
-        if not re.match('[0-9]+',widget_value):
+        if not re.search('[0-9]+',widget_value):
             return 'Must contain at least one number!'
 
     return None

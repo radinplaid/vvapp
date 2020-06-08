@@ -5,6 +5,7 @@ all: vvapp docs
 vvapp: $(SRC)
 	nbdev_build_lib
 	touch vvapp
+	nbdev_clean_nbs
 
 docs_serve: docs
 	cd docs && bundle exec jekyll serve
@@ -12,6 +13,7 @@ docs_serve: docs
 docs: $(SRC)
 	nbdev_build_docs
 	touch docs
+	nbdev_clean_nbs
 
 test:
 	nbdev_test_nbs
