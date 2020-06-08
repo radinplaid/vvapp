@@ -35,8 +35,20 @@ available_input_widgets
 
 
 
-    ['password']
+    ['password', 'time']
 
+
+
+### time
+
+```
+from vvapp.inputs import time
+time(label='Please enter a time (format: HH:MM)',
+     v_model='13:34',
+     style_='max-width:320px')
+```
+
+<img style="float: left;" src="docs/img/input_time.png">
 
 
 ### password
@@ -47,7 +59,7 @@ pw = password(label='Please enter a password',v_model='correcthorsebatterystaple
 pw
 ```
 
-<img style="float: left;" src="docs/images/input_password.png">
+<img style="float: left;" src="docs/img/input_password.png">
 
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
