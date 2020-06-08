@@ -104,7 +104,59 @@ validation_function : callable</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
 <h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
-    Value of the input, format: HH:MM
+    Value of the time input, format: HH:MM
+label : str (optional, default None)
+    Description of the input
+hint : str or callable (optional, default None)
+    Hint text or function generating int based on input value for validating input
+persistent<em>hint : bool (optional, default False)
+    Set to True to display the hint when widget is not focused
+class</em> : str (optional, default None)
+    ipyvuetify HTML class string
+style_ : str (optional, default None)
+    ipyvuetify HTML CSS string
+validation_function : callable</p>
+<p>**kwargs
+    Other arguments supported by ipyvuetify.TextField</p>
+<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>ipyvuetify.TextInput
+    An ipyvuetify time input widget</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="date" class="doc_header"><code>date</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L186" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>date</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>validation_function</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+<p>Date input field</p>
+<p>Function to generate an ipyvuetify TextField input widget with 'date' type prop.</p>
+<p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
+<p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
+<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
+    Value of the date input, format: YYYY-mm-dd
 label : str (optional, default None)
     Description of the input
 hint : str or callable (optional, default None)
@@ -168,6 +220,6 @@ Converted index.ipynb.
  
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"0c2fe6b369c04379b34fc088785c3d05": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c45143b51aa7487c9f692386575c520e": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_0c2fe6b369c04379b34fc088785c3d05"}}, "cf914eba4efc40ae9916227abdd640c8": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "742aa35c3d1e4775bd321951ae43f01c": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "17af697abcf244d0bf0b989fc39d1853": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"1aff97735582429ba1957a517dbb37d8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d61edd3960164da29a360ac5249be169": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_1aff97735582429ba1957a517dbb37d8"}}, "64b94ec0a5b549c68862f535eb03e265": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "a048de0dd2634b9eafdd22154ba350d4": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "1917f0bc06454044bc49f1940ffc194e": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
 </script>
 

@@ -39,6 +39,18 @@ available_input_widgets
 
 
 
+### date
+
+```
+from vvapp.inputs import date
+date(label='Please enter a date (format: YYYY-mm-dd)',
+     v_model='2020-04-15',
+     style_='max-width:320px')
+```
+
+<img style="float: left;" src="docs/img/input_date.png">
+
+
 ### time
 
 ```
