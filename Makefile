@@ -1,6 +1,6 @@
 SRC = $(wildcard ./*.ipynb)
 
-all: vvapp docs
+all: vvapp clean docs
 
 vvapp: $(SRC)
 	nbdev_build_lib
