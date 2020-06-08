@@ -28,16 +28,22 @@ def password(v_model=None,
     ----------
     v_model : str (optional, default None)
         Value of the input
+
     label : str (optional, default None)
         Description of the input
+
     hint : str or callable (optional, default None)
         Hint text or function generating int based on input value for validating input
+
     persistent_hint : bool (optional, default False)
         Set to True to display the hint when widget is not focused
+
     class_ : str (optional, default None)
         ipyvuetify HTML class string
+
     style_ : str (optional, default None)
         ipyvuetify HTML CSS string
+
     validation_function : callable
 
     **kwargs
@@ -116,16 +122,22 @@ def time(v_model=None,
     ----------
     v_model : str (optional, default None)
         Value of the time input, format: HH:MM
+
     label : str (optional, default None)
         Description of the input
+
     hint : str or callable (optional, default None)
         Hint text or function generating int based on input value for validating input
+
     persistent_hint : bool (optional, default False)
         Set to True to display the hint when widget is not focused
+
     class_ : str (optional, default None)
         ipyvuetify HTML class string
+
     style_ : str (optional, default None)
         ipyvuetify HTML CSS string
+
     validation_function : callable
 
     **kwargs
@@ -204,16 +216,22 @@ def date(v_model=None,
     ----------
     v_model : str (optional, default None)
         Value of the date input, format: YYYY-mm-dd
+
     label : str (optional, default None)
         Description of the input
+
     hint : str or callable (optional, default None)
         Hint text or function generating int based on input value for validating input
+
     persistent_hint : bool (optional, default False)
         Set to True to display the hint when widget is not focused
+
     class_ : str (optional, default None)
         ipyvuetify HTML class string
+
     style_ : str (optional, default None)
         ipyvuetify HTML CSS string
+
     validation_function : callable
 
     **kwargs
