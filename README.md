@@ -35,7 +35,7 @@ available_input_widgets
 
 
 
-    ['password', 'time']
+    ['password', 'time', 'date', 'number']
 
 
 
@@ -61,6 +61,31 @@ time(label='Please enter a time (format: HH:MM)',
 ```
 
 <img style="float: left;" src="docs/img/input_time.png">
+
+
+### number
+
+```
+from vvapp.inputs import number
+number(placeholder='Enter a number',
+     style_='max-width:320px')
+```
+
+<img style="float: left;" src="docs/img/input_number.png">
+
+
+`number` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value`
+
+```
+from vvapp.inputs import number
+number(label='Number Input',
+       v_model=123,
+       min_value=0,
+       max_value=100,
+     style_='max-width:320px')
+```
+
+<img style="float: left;" src="docs/img/input_number_validation.png">
 
 
 ### password

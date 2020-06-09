@@ -81,7 +81,7 @@ description: "A python library simplifying ipyvuetify voila application building
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="kn">import</span> <span class="n">__all__</span> <span class="k">as</span> <span class="n">available_input_widgets</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">__all__</span> <span class="k">as</span> <span class="n">available_input_widgets</span>
 <span class="n">available_input_widgets</span>
 </pre></div>
 
@@ -97,7 +97,7 @@ description: "A python library simplifying ipyvuetify voila application building
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;password&#39;, &#39;time&#39;, &#39;date&#39;]</pre>
+<pre>[&#39;password&#39;, &#39;time&#39;, &#39;date&#39;, &#39;number&#39;]</pre>
 </div>
 
 </div>
@@ -121,7 +121,7 @@ description: "A python library simplifying ipyvuetify voila application building
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="kn">import</span> <span class="n">date</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">date</span>
 <span class="n">date</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Please enter a date (format: YYYY-mm-dd)&#39;</span><span class="p">,</span>
      <span class="n">v_model</span><span class="o">=</span><span class="s1">&#39;2020-04-15&#39;</span><span class="p">,</span>
      <span class="n">style_</span><span class="o">=</span><span class="s1">&#39;max-width:320px&#39;</span><span class="p">)</span>
@@ -141,13 +141,13 @@ description: "A python library simplifying ipyvuetify voila application building
 
  
  
-<div id="8a082ef7-a71e-4bfb-8519-f9e3de8152d4"></div>
+<div id="f212332b-3d1f-4984-9e85-8f9aeb004084"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#8a082ef7-a71e-4bfb-8519-f9e3de8152d4');
+var element = $('#f212332b-3d1f-4984-9e85-8f9aeb004084');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "7f01ba130f694656a622be2b56807d9d"}
+{"version_major": 2, "version_minor": 0, "model_id": "c76fea3fa5bc4d8dab97ea8bc0f7d864"}
 </script>
 </div>
 
@@ -179,7 +179,7 @@ var element = $('#8a082ef7-a71e-4bfb-8519-f9e3de8152d4');
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="kn">import</span> <span class="n">time</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">time</span>
 <span class="n">time</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Please enter a time (format: HH:MM)&#39;</span><span class="p">,</span>
      <span class="n">v_model</span><span class="o">=</span><span class="s1">&#39;13:34&#39;</span><span class="p">,</span>
      <span class="n">style_</span><span class="o">=</span><span class="s1">&#39;max-width:320px&#39;</span><span class="p">)</span>
@@ -199,13 +199,13 @@ var element = $('#8a082ef7-a71e-4bfb-8519-f9e3de8152d4');
 
  
  
-<div id="cf534599-3509-4064-8cf8-c823c6533dc0"></div>
+<div id="1ae37547-5fe5-4aee-bb35-600f954bc6c1"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#cf534599-3509-4064-8cf8-c823c6533dc0');
+var element = $('#1ae37547-5fe5-4aee-bb35-600f954bc6c1');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "4eb8f0dfaa694665804c5a256d8ffd2c"}
+{"version_major": 2, "version_minor": 0, "model_id": "03c3d1313ad14627a5eee028d051f713"}
 </script>
 </div>
 
@@ -226,6 +226,124 @@ var element = $('#cf534599-3509-4064-8cf8-c823c6533dc0');
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="number">number<a class="anchor-link" href="#number"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">number</span>
+<span class="n">number</span><span class="p">(</span><span class="n">placeholder</span><span class="o">=</span><span class="s1">&#39;Enter a number&#39;</span><span class="p">,</span>
+     <span class="n">style_</span><span class="o">=</span><span class="s1">&#39;max-width:320px&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+ 
+ 
+<div id="30d60531-4707-46dd-8e98-b7ce0c2d9f26"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#30d60531-4707-46dd-8e98-b7ce0c2d9f26');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "cf799c3590984770ad0fc83b457ed2df"}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html style="float: left;" file="/vvapp/docs/img/input_number.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="/vvapp/inputs#number"><code>number</code></a> inputs have a default validation function that changes the <code>error</code> state of the input to True and prints a sensible hint if the value is less than <code>min_value</code> or greater than <code>max_value</code></p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">number</span>
+<span class="n">number</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Number Input&#39;</span><span class="p">,</span>
+       <span class="n">v_model</span><span class="o">=</span><span class="mi">123</span><span class="p">,</span>
+       <span class="n">min_value</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+       <span class="n">max_value</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+     <span class="n">style_</span><span class="o">=</span><span class="s1">&#39;max-width:320px&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+
+ 
+ 
+<div id="60969028-2062-43b5-a30c-2b41f85900bf"></div>
+<div class="output_subarea output_widget_view ">
+<script type="text/javascript">
+var element = $('#60969028-2062-43b5-a30c-2b41f85900bf');
+</script>
+<script type="application/vnd.jupyter.widget-view+json">
+{"version_major": 2, "version_minor": 0, "model_id": "a48f2118d4564accadf778b01a53bc88"}
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>{% include image.html style="float: left;" file="/vvapp/docs/img/input_number_validation.png" %}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="password">password<a class="anchor-link" href="#password"> </a></h3>
 </div>
 </div>
@@ -237,7 +355,7 @@ var element = $('#cf534599-3509-4064-8cf8-c823c6533dc0');
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="kn">import</span> <span class="n">password</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">vvapp.inputs</span> <span class="k">import</span> <span class="n">password</span>
 <span class="n">pw</span> <span class="o">=</span> <span class="n">password</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Please enter a password&#39;</span><span class="p">,</span><span class="n">v_model</span><span class="o">=</span><span class="s1">&#39;correcthorsebatterystapler&#39;</span><span class="p">)</span>
 <span class="n">pw</span>
 </pre></div>
@@ -256,13 +374,13 @@ var element = $('#cf534599-3509-4064-8cf8-c823c6533dc0');
 
  
  
-<div id="9b1fc739-1376-4731-b7ec-96986af9e6fe"></div>
+<div id="ef465f26-bcec-4155-918a-42c672e32a4b"></div>
 <div class="output_subarea output_widget_view ">
 <script type="text/javascript">
-var element = $('#9b1fc739-1376-4731-b7ec-96986af9e6fe');
+var element = $('#ef465f26-bcec-4155-918a-42c672e32a4b');
 </script>
 <script type="application/vnd.jupyter.widget-view+json">
-{"version_major": 2, "version_minor": 0, "model_id": "e6e90b711660497b90b3ba4fc122e783"}
+{"version_major": 2, "version_minor": 0, "model_id": "832114a658054d918a13c6c188448093"}
 </script>
 </div>
 
@@ -375,6 +493,6 @@ var element = $('#9b1fc739-1376-4731-b7ec-96986af9e6fe');
  
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"a978aa6923374e41b3114ff82f828274": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "da84f512078c42be949d4cf163bc13c1": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_a978aa6923374e41b3114ff82f828274"}}, "7927a8f76a014cd3a4b8eaf2622e7746": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "6a7e5ac76f174ad6b9566b8caea02bfb": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "acb4636da0e24548a1260e84ce2df0f3": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "226840ff469e4130b178728e96a1f7ff": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "7f01ba130f694656a622be2b56807d9d": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_da84f512078c42be949d4cf163bc13c1", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a date (format: YYYY-mm-dd)", "layout": "IPY_MODEL_226840ff469e4130b178728e96a1f7ff", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "date", "v_model": "2020-04-15", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "f984023f6ca644fc853f6ecc002fc2ff": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "4eb8f0dfaa694665804c5a256d8ffd2c": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_da84f512078c42be949d4cf163bc13c1", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a time (format: HH:MM)", "layout": "IPY_MODEL_f984023f6ca644fc853f6ecc002fc2ff", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "time", "v_model": "13:34", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "e7740169ea1846549b0a378672aeca24": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "e6e90b711660497b90b3ba4fc122e783": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_da84f512078c42be949d4cf163bc13c1", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a password", "layout": "IPY_MODEL_e7740169ea1846549b0a378672aeca24", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": null, "success": null, "success_messages": null, "suffix": null, "type": "password", "v_model": "correcthorsebatterystapler", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}}, "version_major": 2, "version_minor": 0}
+{"state": {"a07c905f471844bb937daf4f6f87faeb": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "ff1e460fda284aaf80bb7590b4e90864": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_a07c905f471844bb937daf4f6f87faeb"}}, "9a9f32383eae474f98d9db62a8ce0dd0": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "c0af3cb132b0467e8668f9e58e9ace9a": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "aaf3df3b58694a07b9b3901ad34b464f": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "f44417120b0742cb80f2f3fe57b07628": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "c76fea3fa5bc4d8dab97ea8bc0f7d864": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_ff1e460fda284aaf80bb7590b4e90864", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a date (format: YYYY-mm-dd)", "layout": "IPY_MODEL_f44417120b0742cb80f2f3fe57b07628", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "date", "v_model": "2020-04-15", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "5bf554c60bf644a685f7414efb155667": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "03c3d1313ad14627a5eee028d051f713": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_ff1e460fda284aaf80bb7590b4e90864", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a time (format: HH:MM)", "layout": "IPY_MODEL_5bf554c60bf644a685f7414efb155667", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "time", "v_model": "13:34", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "6bce8ccef37b40f59c7dfe2df8abc687": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "cf799c3590984770ad0fc83b457ed2df": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_ff1e460fda284aaf80bb7590b4e90864", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": false, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": null, "layout": "IPY_MODEL_6bce8ccef37b40f59c7dfe2df8abc687", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": true, "placeholder": "Enter a number", "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "number", "v_model": null, "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "4b27707fb1054e4fb82a194adfdbbee8": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a48f2118d4564accadf778b01a53bc88": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_ff1e460fda284aaf80bb7590b4e90864", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": true, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": "Input: 123.0 is greater than the maximum supported value 100.", "id": null, "label": "Number Input", "layout": "IPY_MODEL_4b27707fb1054e4fb82a194adfdbbee8", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": true, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": "max-width:320px", "success": null, "success_messages": null, "suffix": null, "type": "number", "v_model": 123, "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}, "90127e3d93fb4c4aaf17b9cdd754bd87": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "832114a658054d918a13c6c188448093": {"model_name": "TextFieldModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_dom_classes": [], "_events": [], "_jupyter_vue": "IPY_MODEL_ff1e460fda284aaf80bb7590b4e90864", "_metadata": null, "_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "TextFieldModel", "_view_count": null, "_view_module": "jupyter-vuetify", "_view_module_version": "^1.4.0", "_view_name": "VuetifyView", "append_icon": null, "append_outer_icon": null, "attributes": {}, "autofocus": null, "background_color": null, "children": [], "class_": null, "clear_icon": null, "clearable": null, "color": null, "counter": null, "dark": null, "dense": null, "disabled": null, "error": null, "error_count": null, "error_messages": null, "filled": null, "flat": null, "full_width": null, "height": null, "hide_details": null, "hint": null, "id": null, "label": "Please enter a password", "layout": "IPY_MODEL_90127e3d93fb4c4aaf17b9cdd754bd87", "light": null, "loader_height": null, "loading": null, "messages": null, "outlined": null, "persistent_hint": false, "placeholder": null, "prefix": null, "prepend_icon": null, "prepend_inner_icon": null, "readonly": null, "reverse": null, "rounded": null, "rules": [], "shaped": null, "single_line": null, "slot": null, "solo": null, "solo_inverted": null, "style_": null, "success": null, "success_messages": null, "suffix": null, "type": "password", "v_model": "correcthorsebatterystapler", "v_on": null, "v_slots": [], "validate_on_blur": null, "value": null}}}, "version_major": 2, "version_minor": 0}
 </script>
 
