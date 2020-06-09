@@ -48,16 +48,7 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
      style_='max-width:320px')
 ```
 
-```
-Image(filename="docs/img/input_date.png")
-```
-
-
-
-
-![png](docs/images/output_7_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_date.png">
 
 ### time
 
@@ -68,16 +59,7 @@ time(label='Please enter a time (format: HH:MM)',
      style_='max-width:320px')
 ```
 
-```
-Image(filename="docs/img/input_time.png")
-```
-
-
-
-
-![png](docs/images/output_10_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_time.png">
 
 ### number
 
@@ -87,16 +69,7 @@ number(placeholder='Enter a number',
      style_='max-width:320px')
 ```
 
-```
-Image(filename="docs/img/input_number.png")
-```
-
-
-
-
-![png](docs/images/output_13_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_number.png">
 
 `number` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value`
 
@@ -109,16 +82,7 @@ number(label='Number Input',
      style_='max-width:320px')
 ```
 
-```
-Image(filename="docs/img/input_number_validation.png")
-```
-
-
-
-
-![png](docs/images/output_16_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_number_validation.png">
 
 ### password
 
@@ -128,16 +92,7 @@ pw = password(label='Please enter a password',v_model='correcthorsebatterystaple
 pw
 ```
 
-```
-Image(filename="docs/img/input_password.png")
-```
-
-
-
-
-![png](docs/images/output_19_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_password.png">
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
@@ -178,16 +133,7 @@ pw = password(label='Please enter a password',v_model='correcthorsebatterystaple
 pw
 ```
 
-```
-Image(filename="docs/img/input_password_validation.png")
-```
-
-
-
-
-![png](docs/images/output_24_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/input_password_validation.png">
 
 # Outputs
 
@@ -198,16 +144,7 @@ df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 PandasTable(data=df,title='My DataFrame')
 ```
 
-```
-Image(filename="docs/img/output_pandas_table.png")
-```
-
-
-
-
-![png](docs/images/output_27_0.png)
-
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/output_pandas_table2.png">
 
 The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
 
@@ -218,15 +155,7 @@ df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 PandasTable(data=df,title='My DataFrame')
 ```
 
-```
-Image(filename="docs/img/output_pandas_table_zeroresults.png")
-```
-
-
-
-
-![png](docs/images/output_30_0.png)
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/output_pandas_table_zeroresults.png">
 
 
 ```
@@ -235,13 +164,5 @@ from vvapp.outputs import PandasTable
 PandasTable(data=pd.DataFrame(),title='My DataFrame')
 ```
 
-```
-Image(filename="docs/img/output_pandas_table_nodata.png")
-```
-
-
-
-
-![png](docs/images/output_32_0.png)
-
+<img align="left" alt="Date Input" caption="Date Input" src="docs/img/output_pandas_table_nodata.png">
 
