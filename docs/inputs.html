@@ -34,6 +34,19 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Password-Input">Password Input<a class="anchor-link" href="#Password-Input"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -45,13 +58,14 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="password" class="doc_header"><code>password</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L10" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>password</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="password" class="doc_header"><code>password</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L11" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>password</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Password input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'password' type prop.</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
+<p>Parameters:</p>
+<p>v_model : str (optional, default None)
     Value of the input</p>
 <p>label : str (optional, default None)
     Description of the input</p>
@@ -65,7 +79,8 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
     ipyvuetify HTML CSS string</p>
 <p>**kwargs
     Other arguments supported by ipyvuetify.TextField</p>
-<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>ipyvuetify.TextInput
+<p>Returns:</p>
+<p>ipyvuetify.TextInput
     An ipyvuetify password input widget</p>
 
 </div>
@@ -78,6 +93,12 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Time-Input">Time Input<a class="anchor-link" href="#Time-Input"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -96,13 +117,14 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="time" class="doc_header"><code>time</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L101" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>time</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="time" class="doc_header"><code>time</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>time</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Time input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'time' type prop.</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
+<p>Parameters:
+v_model : str (optional, default None)
     Value of the time input, format: HH:MM</p>
 <p>label : str (optional, default None)
     Description of the input</p>
@@ -116,7 +138,8 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
     ipyvuetify HTML CSS string</p>
 <p>**kwargs
     Other arguments supported by ipyvuetify.TextField</p>
-<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>ipyvuetify.TextInput
+<p>Returns:
+ipyvuetify.TextInput
     An ipyvuetify time input widget</p>
 
 </div>
@@ -129,6 +152,12 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Date-Input">Date Input<a class="anchor-link" href="#Date-Input"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -147,13 +176,14 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="date" class="doc_header"><code>date</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L192" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>date</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="date" class="doc_header"><code>date</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L185" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>date</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Date input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'date' type prop.</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
+<p>Parameters:</p>
+<p>v_model : str (optional, default None)
     Value of the date input, format: YYYY-mm-dd</p>
 <p>label : str (optional, default None)
     Description of the input</p>
@@ -167,7 +197,8 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
     ipyvuetify HTML CSS string</p>
 <p>**kwargs
     Other arguments supported by ipyvuetify.TextField</p>
-<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>ipyvuetify.TextInput
+<p>Returns:</p>
+<p>ipyvuetify.TextInput
     An ipyvuetify time input widget</p>
 
 </div>
@@ -180,6 +211,12 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Number-Input">Number Input<a class="anchor-link" href="#Number-Input"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -198,13 +235,14 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="number" class="doc_header"><code>number</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L283" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>number</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>min_value</code></strong>=<em><code>None</code></em>, <strong><code>max_value</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>validation_function</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="number" class="doc_header"><code>number</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L273" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>number</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>min_value</code></strong>=<em><code>None</code></em>, <strong><code>max_value</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>validation_function</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Number input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'numer' type prop.</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/text-fields/#api">https://vuetifyjs.com/en/components/text-fields/#api</a></p>
-<h2 id="Parameters">Parameters<a class="anchor-link" href="#Parameters"> </a></h2><p>v_model : str (optional, default None)
+<p>Parameters:</p>
+<p>v_model : str (optional, default None)
     Value of the number input</p>
 <p>min_value : float (optional)
     Minimum value for the widget for validation warning</p>
@@ -224,7 +262,8 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
     Validation function to call to validate input, overrides default validation</p>
 <p>**kwargs
     Other arguments supported by ipyvuetify.TextField</p>
-<h2 id="Returns">Returns<a class="anchor-link" href="#Returns"> </a></h2><p>ipyvuetify.TextInput
+<p>Returns:</p>
+<p>ipyvuetify.TextInput
     An ipyvuetify number input widget with optional min/max value validation</p>
 
 </div>
@@ -241,6 +280,6 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
  
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"608f15698d7140e1b3f118e5392eb1e6": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "00c12f63cbb849f79bb39a0e967c5732": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_608f15698d7140e1b3f118e5392eb1e6"}}, "350b1c542ed645c8a6593408dd7f361e": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "62acfdfc1518408a823b938b6eecad2a": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "6a811c2ebd3845b7904bacce7c0988af": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"84a8d24ae34d4d3a95121221492c972e": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "a577463e61124147898ab12872a81cc3": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_84a8d24ae34d4d3a95121221492c972e"}}, "c37e5d207bf347dba8a98aa204f5912e": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "e54153bb72ae4840a4c7827428258ad0": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "15d802c651464cd3a20ef0266489589e": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
 </script>
 

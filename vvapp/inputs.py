@@ -3,9 +3,10 @@
 __all__ = ['password', 'time', 'date', 'number']
 
 # Cell
-
 import ipyvuetify
+from nbdev.imports import *
 
+# Cell
 
 def password(v_model=None,
              label=None,
@@ -23,8 +24,8 @@ def password(v_model=None,
 
     See the vuetify documention for other arguments that can be passed as keyword arguments: https://vuetifyjs.com/en/components/text-fields/#api
 
-    Parameters
-    ----------
+    Parameters:
+
     v_model : str (optional, default None)
         Value of the input
 
@@ -46,8 +47,8 @@ def password(v_model=None,
     **kwargs
         Other arguments supported by ipyvuetify.TextField
 
-    Returns
-    -------
+    Returns:
+
     ipyvuetify.TextInput
         An ipyvuetify password input widget
     """
@@ -95,9 +96,6 @@ def password(v_model=None,
 
 # Cell
 
-import ipyvuetify
-
-
 def time(v_model=None,
          label=None,
          hint=None,
@@ -114,8 +112,7 @@ def time(v_model=None,
 
     See the vuetify documention for other arguments that can be passed as keyword arguments: https://vuetifyjs.com/en/components/text-fields/#api
 
-    Parameters
-    ----------
+    Parameters:
     v_model : str (optional, default None)
         Value of the time input, format: HH:MM
 
@@ -137,8 +134,7 @@ def time(v_model=None,
     **kwargs
         Other arguments supported by ipyvuetify.TextField
 
-    Returns
-    -------
+    Returns:
     ipyvuetify.TextInput
         An ipyvuetify time input widget
     """
@@ -186,9 +182,6 @@ def time(v_model=None,
 
 # Cell
 
-import ipyvuetify
-
-
 def date(v_model=None,
          label=None,
          hint=None,
@@ -205,8 +198,8 @@ def date(v_model=None,
 
     See the vuetify documention for other arguments that can be passed as keyword arguments: https://vuetifyjs.com/en/components/text-fields/#api
 
-    Parameters
-    ----------
+    Parameters:
+
     v_model : str (optional, default None)
         Value of the date input, format: YYYY-mm-dd
 
@@ -228,8 +221,8 @@ def date(v_model=None,
     **kwargs
         Other arguments supported by ipyvuetify.TextField
 
-    Returns
-    -------
+    Returns:
+
     ipyvuetify.TextInput
         An ipyvuetify time input widget
     """
@@ -277,9 +270,6 @@ def date(v_model=None,
 
 # Cell
 
-import ipyvuetify
-
-
 def number(v_model=None,
            min_value=None,
            max_value=None,
@@ -299,8 +289,8 @@ def number(v_model=None,
 
     See the vuetify documention for other arguments that can be passed as keyword arguments: https://vuetifyjs.com/en/components/text-fields/#api
 
-    Parameters
-    ----------
+    Parameters:
+
     v_model : str (optional, default None)
         Value of the number input
 
@@ -331,8 +321,8 @@ def number(v_model=None,
     **kwargs
         Other arguments supported by ipyvuetify.TextField
 
-    Returns
-    -------
+    Returns:
+
     ipyvuetify.TextInput
         An ipyvuetify number input widget with optional min/max value validation
     """
