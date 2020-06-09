@@ -35,7 +35,7 @@ available_input_widgets
 
 
 
-    ['password', 'time', 'date', 'number']
+    ['PandasTable']
 
 
 
@@ -139,3 +139,33 @@ pw
 ```
 
 <img style="float: left;" src="docs/img/input_password_validation.png">
+
+# Outputs
+
+```
+import pandas as pd
+from vvapp.outputs import PandasTable
+df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
+PandasTable(data=df,title='My DataFrame')
+```
+
+<img style="float: left;" src="docs/img/output_pandas_table.png">
+
+The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
+
+```
+import pandas as pd
+from vvapp.outputs import PandasTable
+df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
+PandasTable(data=df,title='My DataFrame')
+```
+
+<img style="float: left;" src="docs/img/output_pandas_table_zeroresults.png">
+
+```
+import pandas as pd
+from vvapp.outputs import PandasTable
+PandasTable(data=pd.DataFrame(),title='My DataFrame')
+```
+
+<img style="float: left;" src="docs/img/output_pandas_table_nodata.png">

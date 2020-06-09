@@ -1,6 +1,8 @@
 {
   "vvapp": {
     "Overview": "/",
-    "vvapp.inputs": "/inputs"
+    "vvapp.inputs": "/inputs",
+    "vvapp.outputs": "/outputs",
+    "Title": "/Untitled"
   }
 }

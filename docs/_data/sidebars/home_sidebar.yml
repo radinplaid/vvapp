@@ -12,6 +12,12 @@ entries:
     - output: web,pdf
       title: vvapp.inputs
       url: /inputs
+    - output: web,pdf
+      title: vvapp.outputs
+      url: /outputs
+    - output: web,pdf
+      title: Title
+      url: /Untitled
     output: web
     title: vvapp
   output: web
