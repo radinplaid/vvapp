@@ -39,6 +39,47 @@ available_input_widgets
 
 
 
+### select (dropdown)
+
+For a select input, the `v_model` can be a list:
+
+```
+from vvapp.inputs import select
+select(items=['one','two','three'],v_model='two')
+```
+
+<img alt="Select Input" caption="Select Input" src="images/select1.png">
+
+... or a dict where the keys are the labels to be displayed and the values and the values
+
+```
+select(items={'One':'one','Two':'two','Three':'three'},v_model='two')
+```
+
+<img alt="Select Input" caption="Select Input With dict input" src="images/select2.png">
+
+Also, it is possible for multiple items to be selected via the `multiple` prop:
+
+```
+tmp = select(items={'One':'one','Two':'two','Three':'three'},v_model=['one','two'],multiple=True)
+tmp
+```
+
+<img alt="Select Input" caption="Multiple Select Input" src="images/select3.png">
+
+```
+tmp.v_model
+```
+
+
+
+
+    ['one', 'two']
+
+
+
+### combobox
+
 ### checkbox
 
 ```
