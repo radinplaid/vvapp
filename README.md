@@ -48,7 +48,7 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
      style_='max-width:320px')
 ```
 
-<img align="left" alt="Date Input" caption="Date Input" src="images/input_date.png">
+<img align="left" alt="Date Input" caption="Date Input" src="images/input_date.png">  
 <br/><br/>
 
 
@@ -62,7 +62,7 @@ time(label='Please enter a time (format: HH:MM)',
      style_='max-width:320px')
 ```
 
-<img align="left" alt="Time Input" caption="Time Input" src="images/input_time.png">
+<img align="left" alt="Time Input" caption="Time Input" src="images/input_time.png">  
 <br/><br/>
 
 
@@ -75,7 +75,7 @@ number(placeholder='Enter a number',
      style_='max-width:320px')
 ```
 
-<img align="left" alt="Number Input" caption="Number Input" src="images/input_number.png">
+<img align="left" alt="Number Input" caption="Number Input" src="images/input_number.png">  
 <br/><br/>
 
 
@@ -91,7 +91,7 @@ number(label='Number Input',
      style_='max-width:320px')
 ```
 
-<img align="left" alt="Number Input With Validation" caption="Number Input With Validation" src="images/input_number_validation.png">
+<img align="left" alt="Number Input With Validation" caption="Number Input With Validation" src="images/input_number_validation.png">  
 <br/><br/>
 
 
@@ -104,7 +104,7 @@ pw = password(label='Please enter a password',v_model='correcthorsebatterystaple
 pw
 ```
 
-<img align="left" alt="Password Input" caption="Password Input" src="images/input_password.png">
+<img align="left" alt="Password Input" caption="Password Input" src="images/input_password.png">  
 <br/><br/>
 
 
@@ -148,7 +148,7 @@ pw = password(label='Please enter a password',v_model='correcthorsebatterystaple
 pw
 ```
 
-<img align="left" alt="Password Input with Validation" caption="Password Input with Validation" src="images/input_password_validation.png">
+<img align="left" alt="Password Input with Validation" caption="Password Input with Validation" src="images/input_password_validation.png">  
 <br/><br/>
 
 
@@ -164,7 +164,7 @@ df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 PandasTable(data=df,title='My DataFrame')
 ```
 
-<img align="left" alt="Pandas Dataframe Output" caption="Pandas Dataframe Output" src="images/output_pandas_table2.png">
+<img align="left" alt="Pandas Dataframe Output" caption="Pandas Dataframe Output" src="images/output_pandas_table2.png">  
 <br/><br/>
 
 
@@ -178,7 +178,7 @@ df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 PandasTable(data=df,title='My DataFrame')
 ```
 
-<img align="left" alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png">
+<img align="left" alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png">  
 <br/><br/>
 
 
@@ -189,7 +189,7 @@ from vvapp.outputs import PandasTable
 PandasTable(data=pd.DataFrame(),title='My DataFrame')
 ```
 
-<img align="left" alt="Pandas Dataframe Output No Data" caption="Pandas Dataframe Output No Data" src="images/output_pandas_table_nodata.png">
+<img align="left" alt="Pandas Dataframe Output No Data" caption="Pandas Dataframe Output No Data" src="images/output_pandas_table_nodata.png">  
 <br/><br/>
 
 
