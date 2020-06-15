@@ -49,6 +49,7 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
 ```
 
 <img align="left" alt="Date Input" caption="Date Input" src="images/input_date.png">
+<br>
 
 ### time
 
