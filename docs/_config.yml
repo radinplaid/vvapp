@@ -9,7 +9,8 @@ use_math: true
 # Add Google analytics id if you have one and want to use it here
 google_analytics:
 # See http://nbdev.fast.ai/search for help with adding Search
-google_search: 002625092468623467858:pur8mquhiw4
+#google_search: 002625092468623467858:pur8mquhiw4
+google_search: 
 
 host: 127.0.0.1
 # the preview server used. Leave as is.
@@ -60,5 +61,5 @@ sidebars:
 - home_sidebar
 permalink: pretty
 
-theme: jekyll-theme-cayman
-baseurl: /vvapp/
+#theme: jekyll-theme-cayman
+baseurl: /
