@@ -35,7 +35,16 @@ available_input_widgets
 
 
 
-    ['checkbox', 'password', 'time', 'date', 'number', 'slider', 'radio_buttons']
+    ['checkbox',
+     'password',
+     'time',
+     'date',
+     'number',
+     'range_slider',
+     'slider',
+     'radio_buttons',
+     'select',
+     'select_or_create']
 
 
 
@@ -78,7 +87,15 @@ tmp.v_model
 
 
 
-### combobox
+### select_or_create (combobox)
+
+```
+from vvapp.inputs import select_or_create
+select_or_create(items=['one','two','three'],v_model=['one','two'],multiple=True)
+
+```
+
+<img alt="Combobox Input" caption="Combobox" src="images/select_or_create.png">
 
 ### checkbox
 
