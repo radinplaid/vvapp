@@ -11,6 +11,7 @@ index = {"checkbox": "00_inputs.ipynb",
          "slider": "00_inputs.ipynb",
          "radio_buttons": "00_inputs.ipynb",
          "select": "00_inputs.ipynb",
+         "select_or_create": "00_inputs.ipynb",
          "PandasTable": "01_outputs.ipynb",
          "markdown": "01_outputs.ipynb"}
 
