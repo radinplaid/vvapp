@@ -35,7 +35,7 @@ available_input_widgets
 
 
 
-    ['password', 'time', 'date', 'number']
+    ['password', 'time', 'date', 'number', 'slider', 'radio_buttons']
 
 
 
