@@ -63,6 +63,15 @@ slider(label='Slider Example',
 
 <img alt="Slider Input" caption="Slider" src="images/slider.png">
 
+### range_slider
+
+```
+from vvapp.inputs import range_slider
+range_slider(min=0,max=100,v_model=[40,60])
+```
+
+<img alt="Range Slider input" caption="Range Slider Example" src="images/range_slider.png">
+
 ### radio_buttons
 
 ```

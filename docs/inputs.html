@@ -348,6 +348,96 @@ ipyvuetify.TextInput
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Range-Slider">Range Slider<a class="anchor-link" href="#Range-Slider"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="range_slider" class="doc_header"><code>range_slider</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L480" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>range_slider</code>(<strong><code>min</code></strong>=<em><code>None</code></em>, <strong><code>max</code></strong>=<em><code>None</code></em>, <strong><code>vertical</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'mx-6 mt-8'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>thumb_size</code></strong>=<em><code>24</code></em>, <strong><code>tick_size</code></strong>=<em><code>4</code></em>, <strong><code>ticks</code></strong>=<em><code>True</code></em>, <strong><code>step</code></strong>=<em><code>None</code></em>, <strong><code>thumb_label</code></strong>=<em><code>'always'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+<p>Range Slider input</p>
+<p>Function to generate an ipyvuetify Range Slider input widget.</p>
+<p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
+<p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/sliders/">https://vuetifyjs.com/en/components/sliders/</a></p>
+<p>Parameters:
+min : float
+    Minimum value of slider</p>
+<p>max : float
+    Maximum value of slider</p>
+<p>step : float (optional)
+    Step size for slider, default: (max-min)/10</p>
+<p>v_model : list (optional)
+    Default value of range slider (defaults to [min,max]))</p>
+<p>label : str (optional, default None)
+    Description of the input</p>
+<p>hint : str or callable (optional, default None)
+    Hint text or function generating int based on input value for validating input</p>
+<p>persistent_hint : bool (optional, default False)
+    Set to True to display the hint when widget is not focused</p>
+<p>class_ : str (optional, default None)
+    ipyvuetify HTML class string</p>
+<p>style_ : str (optional, default None)
+    ipyvuetify HTML CSS string</p>
+<p>thumb_size : int (optional, default 24)
+    Size of thumb widget in pixels</p>
+<p>tick_size : int (optional, default 4)
+    Size of slider ticks in pixels</p>
+<p>ticks : bool (default True)
+    Whether to display slider ticks</p>
+<p>thumb_label : bool/str (optional, default 'always')
+    How to display thumb label</p>
+<p>**kwargs
+    Other arguments supported by ipyvuetify.TextField</p>
+<p>Returns:
+ipyvuetify.Slider
+    An ipyvuetify slider</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">range_slider</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="nb">max</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span><span class="n">v_model</span><span class="o">=</span><span class="p">[</span><span class="mi">40</span><span class="p">,</span><span class="mi">60</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Slider">Slider<a class="anchor-link" href="#Slider"> </a></h2>
 </div>
 </div>
@@ -370,10 +460,10 @@ ipyvuetify.TextInput
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="slider" class="doc_header"><code>slider</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L480" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>slider</code>(<strong><code>min</code></strong>=<em><code>None</code></em>, <strong><code>max</code></strong>=<em><code>None</code></em>, <strong><code>vertical</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'mx-6 mt-8'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>thumb_size</code></strong>=<em><code>24</code></em>, <strong><code>tick_size</code></strong>=<em><code>4</code></em>, <strong><code>ticks</code></strong>=<em><code>True</code></em>, <strong><code>step</code></strong>=<em><code>None</code></em>, <strong><code>thumb_label</code></strong>=<em><code>'always'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="slider" class="doc_header"><code>slider</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L590" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>slider</code>(<strong><code>min</code></strong>=<em><code>None</code></em>, <strong><code>max</code></strong>=<em><code>None</code></em>, <strong><code>vertical</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'mx-6 mt-8'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>thumb_size</code></strong>=<em><code>24</code></em>, <strong><code>tick_size</code></strong>=<em><code>4</code></em>, <strong><code>ticks</code></strong>=<em><code>True</code></em>, <strong><code>step</code></strong>=<em><code>None</code></em>, <strong><code>thumb_label</code></strong>=<em><code>'always'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Slider input</p>
-<p>Function to generate an ipyvuetify Radio Buttons input widget.</p>
+<p>Function to generate an ipyvuetify slider input widget.</p>
 <p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
 <p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/sliders/">https://vuetifyjs.com/en/components/sliders/</a></p>
 <p>Parameters:
@@ -483,7 +573,7 @@ ipyvuetify.Slider
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="radio_buttons" class="doc_header"><code>radio_buttons</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L588" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>radio_buttons</code>(<strong><code>choices</code></strong>, <strong><code>row</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'px-2 my-0 py-2'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="radio_buttons" class="doc_header"><code>radio_buttons</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L698" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>radio_buttons</code>(<strong><code>choices</code></strong>, <strong><code>row</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'px-2 my-0 py-2'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Radio Button input field</p>
 <p>Function to generate an ipyvuetify Radio Buttons input widget.</p>
@@ -610,6 +700,6 @@ ipyvuetify.TextInput
  
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"1a20a4ea6f4a4a4bb853baddf5e36e53": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "070be430d75e455e8ac39f0711bc93c6": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_1a20a4ea6f4a4a4bb853baddf5e36e53"}}, "66d09879ed1b408db7feb26f1796b9ed": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "ba7ec058d9a34b6ab943f9db348dbb6e": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "9cfff2902ae84696aabab169741baee0": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"fe95fb53ddd04644ad973c2dee5132ef": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "d0e2f8113e1f4fab9a17fa1d0748bd36": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_fe95fb53ddd04644ad973c2dee5132ef"}}, "c45f11de29cf48759ce72abc36679003": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "e262fb90a2474fb693ec3e89525e7120": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "f87d2c38bde34115bb8634ab0b2dac21": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
 </script>
 
