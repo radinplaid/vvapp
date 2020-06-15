@@ -35,9 +35,18 @@ available_input_widgets
 
 
 
-    ['password', 'time', 'date', 'number', 'slider', 'radio_buttons']
+    ['checkbox', 'password', 'time', 'date', 'number', 'slider', 'radio_buttons']
 
 
+
+### checkbox
+
+```
+from vvapp.inputs import checkbox
+checkbox(label='Checkbox example',v_model=True)
+```
+
+<img alt="Checkbox Input" caption="Checkbox" src="images/checkbox.png">
 
 ### slider
 

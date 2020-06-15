@@ -34,6 +34,76 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 </div>
     {% endraw %}
 
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="checkbox" class="doc_header"><code>checkbox</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L11" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>checkbox</code>(<strong><code>v_model</code></strong>=<em><code>False</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+</blockquote>
+<p>Checkbox input</p>
+<p>Function to generate an ipyvuetify Checkbox input widget.</p>
+<p>The value of the widget can be accessed or modified by the <code>v_model</code> property of the return value.</p>
+<p>See the vuetify documention for other arguments that can be passed as keyword arguments: <a href="https://vuetifyjs.com/en/components/selection-controls/">https://vuetifyjs.com/en/components/selection-controls/</a></p>
+<p>Parameters:
+v_model : bool (optional, default None)
+    Value of the time input, must be an element of choices</p>
+<p>label : str (optional, default False)
+    Default value of the checkbox input</p>
+<p>hint : str (optional, default None)
+    Hint text</p>
+<p>persistent_hint : bool (optional, default False)
+    Set to True to display the hint when widget is not focused</p>
+<p>class_ : str (optional, default None)
+    ipyvuetify HTML class string</p>
+<p>style_ : str (optional, default None)
+    ipyvuetify HTML CSS string</p>
+<p>**kwargs
+    Other arguments supported by ipyvuetify.TextField</p>
+<p>Returns:
+ipyvuetify.TextInput
+    An ipyvuetify time input widget</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">checkbox</span><span class="p">(</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Checkbox example&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Password-Input">Password Input<a class="anchor-link" href="#Password-Input"> </a></h2>
@@ -58,7 +128,7 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="password" class="doc_header"><code>password</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L11" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>password</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="password" class="doc_header"><code>password</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L71" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>password</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Password input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'password' type prop.</p>
@@ -117,7 +187,7 @@ description: "Ipyvuetify Jupyter input widgets with a simplified API"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="time" class="doc_header"><code>time</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L99" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>time</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="time" class="doc_header"><code>time</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L159" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>time</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Time input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'time' type prop.</p>
@@ -176,7 +246,7 @@ ipyvuetify.TextInput
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="date" class="doc_header"><code>date</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L185" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>date</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="date" class="doc_header"><code>date</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L245" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>date</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Date input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'date' type prop.</p>
@@ -235,7 +305,7 @@ ipyvuetify.TextInput
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="number" class="doc_header"><code>number</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L273" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>number</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>min_value</code></strong>=<em><code>None</code></em>, <strong><code>max_value</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>validation_function</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="number" class="doc_header"><code>number</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L333" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>number</code>(<strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>min_value</code></strong>=<em><code>None</code></em>, <strong><code>max_value</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>None</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>validation_function</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Number input field</p>
 <p>Function to generate an ipyvuetify TextField input widget with 'numer' type prop.</p>
@@ -300,7 +370,7 @@ ipyvuetify.TextInput
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="slider" class="doc_header"><code>slider</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L420" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>slider</code>(<strong><code>min</code></strong>=<em><code>None</code></em>, <strong><code>max</code></strong>=<em><code>None</code></em>, <strong><code>vertical</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'mx-6 mt-8'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>thumb_size</code></strong>=<em><code>24</code></em>, <strong><code>tick_size</code></strong>=<em><code>4</code></em>, <strong><code>ticks</code></strong>=<em><code>True</code></em>, <strong><code>step</code></strong>=<em><code>None</code></em>, <strong><code>thumb_label</code></strong>=<em><code>'always'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="slider" class="doc_header"><code>slider</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L480" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>slider</code>(<strong><code>min</code></strong>=<em><code>None</code></em>, <strong><code>max</code></strong>=<em><code>None</code></em>, <strong><code>vertical</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'mx-6 mt-8'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong><code>thumb_size</code></strong>=<em><code>24</code></em>, <strong><code>tick_size</code></strong>=<em><code>4</code></em>, <strong><code>ticks</code></strong>=<em><code>True</code></em>, <strong><code>step</code></strong>=<em><code>None</code></em>, <strong><code>thumb_label</code></strong>=<em><code>'always'</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Slider input</p>
 <p>Function to generate an ipyvuetify Radio Buttons input widget.</p>
@@ -413,7 +483,7 @@ ipyvuetify.Slider
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="radio_buttons" class="doc_header"><code>radio_buttons</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L528" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>radio_buttons</code>(<strong><code>choices</code></strong>, <strong><code>row</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'px-2 my-0 py-2'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
+<h4 id="radio_buttons" class="doc_header"><code>radio_buttons</code><a href="https://github.com/radinplaid/vvapp/tree/master/vvapp/inputs.py#L588" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>radio_buttons</code>(<strong><code>choices</code></strong>, <strong><code>row</code></strong>=<em><code>False</code></em>, <strong><code>v_model</code></strong>=<em><code>None</code></em>, <strong><code>label</code></strong>=<em><code>None</code></em>, <strong><code>hint</code></strong>=<em><code>None</code></em>, <strong><code>persistent_hint</code></strong>=<em><code>False</code></em>, <strong><code>class_</code></strong>=<em><code>'px-2 my-0 py-2'</code></em>, <strong><code>style_</code></strong>=<em><code>None</code></em>, <strong>**<code>kwargs</code></strong>)</p>
 </blockquote>
 <p>Radio Button input field</p>
 <p>Function to generate an ipyvuetify Radio Buttons input widget.</p>
@@ -540,6 +610,6 @@ ipyvuetify.TextInput
  
 
 <script type="application/vnd.jupyter.widget-state+json">
-{"state": {"c99e91c4b6ea4f9f89a695177503f533": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "b1808fec5b2a4c2d914e20b83bbbe0be": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_c99e91c4b6ea4f9f89a695177503f533"}}, "aef26104a38b40a3a192be025913781e": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "536f44ef5c114ba5aa45273abe210326": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "f47bf3af49ca4cd0aa57d3a67588c36e": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
+{"state": {"99e4362287e4482da73f6f5a9beffe3f": {"model_name": "LayoutModel", "model_module": "@jupyter-widgets/base", "model_module_version": "1.2.0", "state": {"_model_module": "@jupyter-widgets/base", "_model_module_version": "1.2.0", "_model_name": "LayoutModel", "_view_count": null, "_view_module": "@jupyter-widgets/base", "_view_module_version": "1.2.0", "_view_name": "LayoutView", "align_content": null, "align_items": null, "align_self": null, "border": null, "bottom": null, "display": null, "flex": null, "flex_flow": null, "grid_area": null, "grid_auto_columns": null, "grid_auto_flow": null, "grid_auto_rows": null, "grid_column": null, "grid_gap": null, "grid_row": null, "grid_template_areas": null, "grid_template_columns": null, "grid_template_rows": null, "height": null, "justify_content": null, "justify_items": null, "left": null, "margin": null, "max_height": null, "max_width": null, "min_height": null, "min_width": null, "object_fit": null, "object_position": null, "order": null, "overflow": null, "overflow_x": null, "overflow_y": null, "padding": null, "right": null, "top": null, "visibility": null, "width": null}}, "3898f01d4f8749fa88a72d89c77cb70d": {"model_name": "ForceLoadModel", "model_module": "jupyter-vue", "model_module_version": "^1.3.2", "state": {"_dom_classes": [], "_model_module": "jupyter-vue", "_model_module_version": "^1.3.2", "_model_name": "ForceLoadModel", "_view_count": null, "_view_module": null, "_view_module_version": "", "_view_name": null, "layout": "IPY_MODEL_99e4362287e4482da73f6f5a9beffe3f"}}, "eaa30890b8724592a55e302428cd6839": {"model_name": "ThemeModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeModel", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "dark": false}}, "7151b43a079849fea680f36054033676": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "light", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#82B1FF", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#1976D2", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}, "ab39677661dc4af9a99bed84b013138e": {"model_name": "ThemeColorsModel", "model_module": "jupyter-vuetify", "model_module_version": "^1.4.0", "state": {"_model_module": "jupyter-vuetify", "_model_module_version": "^1.4.0", "_model_name": "ThemeColorsModel", "_theme_name": "dark", "_view_count": null, "_view_module": null, "_view_module_version": "^1.4.0", "_view_name": null, "accent": "#FF4081", "anchor": null, "error": "#FF5252", "info": "#2196F3", "primary": "#2196F3", "secondary": "#424242", "success": "#4CAF50", "warning": "#FB8C00"}}}, "version_major": 2, "version_minor": 0}
 </script>
 

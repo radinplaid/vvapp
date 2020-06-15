@@ -2,7 +2,8 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"password": "00_inputs.ipynb",
+index = {"checkbox": "00_inputs.ipynb",
+         "password": "00_inputs.ipynb",
          "time": "00_inputs.ipynb",
          "date": "00_inputs.ipynb",
          "number": "00_inputs.ipynb",
