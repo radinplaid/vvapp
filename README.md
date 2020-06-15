@@ -39,6 +39,21 @@ available_input_widgets
 
 
 
+### slider
+
+```
+from vvapp.inputs import slider
+slider(label='Slider Example',
+       min=0,
+       max=10,
+       step=1,
+       color='red',
+       track_color='red',
+       v_model=5)
+```
+
+<img alt="Slider Input" caption="Slider" src="images/slider.png">
+
 ### radio_buttons
 
 ```
