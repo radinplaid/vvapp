@@ -48,6 +48,15 @@ available_input_widgets
 
 
 
+### text
+
+```
+from vvapp.inputs import text
+text(label='Text Input',hint='Enter some text',v_model='some text')
+```
+
+<img alt="Text Input" caption="Text Input Example" src="images/input_text.png">
+
 ### select (dropdown)
 
 For a select input, the `v_model` can be a list:
