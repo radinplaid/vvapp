@@ -63,6 +63,9 @@ time(label='Please enter a time (format: HH:MM)',
 ```
 
 <p><img align="left" alt="Time Input" caption="Time Input" src="images/input_time.png"/></p>
+<br/><br/>
+
+
 
 ### number
 
@@ -73,6 +76,9 @@ number(placeholder='Enter a number',
 ```
 
 <p><img align="left" alt="Number Input" caption="Number Input" src="images/input_number.png"/></p>
+<br/><br/>
+
+
 
 `number` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value`
 
@@ -86,6 +92,9 @@ number(label='Number Input',
 ```
 
 <p><img align="left" alt="Number Input With Validation" caption="Number Input With Validation" src="images/input_number_validation.png"/></p>
+<br/><br/>
+
+
 
 ### password
 
@@ -98,6 +107,9 @@ pw
 <p>
     <img align="left" alt="Password Input" caption="Password Input" src="images/input_password.png"/>  
 </p>
+<br/><br/>
+
+
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
@@ -141,6 +153,9 @@ pw
 <p>
     <img align="left" alt="Password Input with Validation" caption="Password Input with Validation" src="images/input_password_validation.png"/>  
 </p>
+<br/><br/>
+
+
 
 ## Outputs
 
@@ -156,6 +171,9 @@ PandasTable(data=df,title='My DataFrame')
 <p>
     <img align="left" alt="Pandas Dataframe Output" caption="Pandas Dataframe Output" src="images/output_pandas_table2.png"/>  
 </p>
+<br/><br/>
+
+
 
 The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
 
@@ -169,6 +187,9 @@ PandasTable(data=df,title='My DataFrame')
 <p>
     <img align="left" alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png"/>  
 </p>
+<br/><br/>
+
+
 
 ```
 import pandas as pd
@@ -179,3 +200,6 @@ PandasTable(data=pd.DataFrame(),title='My DataFrame')
 <p>
     <img align="left" alt="Pandas Dataframe Output No Data" caption="Pandas Dataframe Output No Data" src="images/output_pandas_table_nodata.png"/>  
 </p>
+<br/><br/>
+
+
