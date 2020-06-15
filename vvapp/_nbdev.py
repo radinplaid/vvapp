@@ -11,7 +11,7 @@ index = {"password": "00_inputs.ipynb",
 modules = ["inputs.py",
            "outputs.py"]
 
-doc_url = "https://radinplaid.github.io/vvapp/"
+doc_url = "https://radinplaid.github.io/vvapp"
 
 git_url = "https://github.com/radinplaid/vvapp/tree/master/"
 
