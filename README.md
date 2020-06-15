@@ -49,7 +49,7 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
 ```
 
 <img align="left" alt="Date Input" caption="Date Input" src="images/input_date.png">
-<br>
+<br/><br/>
 
 ### time
 
@@ -61,6 +61,7 @@ time(label='Please enter a time (format: HH:MM)',
 ```
 
 <img align="left" alt="Time Input" caption="Time Input" src="images/input_time.png">
+<br/><br/>
 
 ### number
 
@@ -71,6 +72,7 @@ number(placeholder='Enter a number',
 ```
 
 <img align="left" alt="Number Input" caption="Number Input" src="images/input_number.png">
+<br/><br/>
 
 `number` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value`
 
@@ -84,6 +86,7 @@ number(label='Number Input',
 ```
 
 <img align="left" alt="Number Input With Validation" caption="Number Input With Validation" src="images/input_number_validation.png">
+<br/><br/>
 
 ### password
 
@@ -94,6 +97,7 @@ pw
 ```
 
 <img align="left" alt="Password Input" caption="Password Input" src="images/input_password.png">
+<br/><br/>
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
@@ -135,6 +139,7 @@ pw
 ```
 
 <img align="left" alt="Password Input with Validation" caption="Password Input with Validation" src="images/input_password_validation.png">
+<br/><br/>
 
 ## Outputs
 
@@ -148,6 +153,7 @@ PandasTable(data=df,title='My DataFrame')
 ```
 
 <img align="left" alt="Pandas Dataframe Output" caption="Pandas Dataframe Output" src="images/output_pandas_table2.png">
+<br/><br/>
 
 The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
 
@@ -159,7 +165,7 @@ PandasTable(data=df,title='My DataFrame')
 ```
 
 <img align="left" alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png">
-
+<br/><br/>
 
 ```
 import pandas as pd
@@ -168,4 +174,4 @@ PandasTable(data=pd.DataFrame(),title='My DataFrame')
 ```
 
 <img align="left" alt="Pandas Dataframe Output No Data" caption="Pandas Dataframe Output No Data" src="images/output_pandas_table_nodata.png">
-
+<br/><br/>
