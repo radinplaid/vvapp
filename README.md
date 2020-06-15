@@ -39,6 +39,21 @@ available_input_widgets
 
 
 
+### radio_buttons
+
+```
+from vvapp.inputs import radio_buttons
+radio_buttons(choices={
+                    'Apple': 'apple',
+                    'Blueberry': 'blueberry',
+                    'Pumpkin': 'pumpkin'
+                },
+              label='What is your favourite pie flavour?',
+              v_model='blueberry')
+```
+
+<img alt="Radio Button Input" caption="Radio Button" src="images/radio_buttons.png">
+
 ### date
 
 ```

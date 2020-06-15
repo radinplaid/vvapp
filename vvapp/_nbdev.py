@@ -6,6 +6,7 @@ index = {"password": "00_inputs.ipynb",
          "time": "00_inputs.ipynb",
          "date": "00_inputs.ipynb",
          "number": "00_inputs.ipynb",
+         "radio_buttons": "00_inputs.ipynb",
          "PandasTable": "01_outputs.ipynb"}
 
 modules = ["inputs.py",
