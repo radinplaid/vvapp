@@ -268,6 +268,41 @@ pw
 <img alt="Password Input with Validation" caption="Password Input with Validation" src="images/input_password_validation.png">
 
 
+### button
+
+```
+from vvapp.inputs import button
+```
+
+```
+def print_test_on_click(*args):
+    print('test')
+
+button(label='I print `test` on click',
+       size='large',
+       color='teal',
+       dark=True,
+       on_click=print_test_on_click)
+
+```
+
+    test
+
+
+<img alt="Button Input Example" caption="Button Input Example" src="images/input_button1.png">
+
+```
+button(icon='mdi-recycle',
+       size='large',
+       color='teal',
+       dark=True,
+       fab=True,
+       class_='ma-4'
+      )
+```
+
+<img alt="Button Input Example" caption="Fab Style With Icon Button Input Example" src="images/input_button2.png">
+
 ## Outputs
 
 ### PandasTable
