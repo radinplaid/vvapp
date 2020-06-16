@@ -179,8 +179,8 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
 ### time
 
 ```
-from vvapp.inputs import time
-time(label='Please enter a time (format: HH:MM)',
+from vvapp.inputs import time_input
+time_input(label='Please enter a time (format: HH:MM)',
      v_model='13:34',
      style_='max-width:320px')
 ```
@@ -302,6 +302,28 @@ button(icon='mdi-recycle',
 ```
 
 <img alt="Button Input Example" caption="Fab Style With Icon Button Input Example" src="images/input_button2.png">
+
+### date_range
+
+```
+from vvapp.inputs import date_range
+temp = date_range(dates=['2020-01-01','2020-02-01'])
+temp
+```
+
+<img alt="Date Range Input Example" caption="Date Range Input Example" src="images/daterange.png">
+
+
+```
+temp.dates
+```
+
+
+
+
+    ['2020-01-01', '2020-02-01']
+
+
 
 ## Outputs
 
