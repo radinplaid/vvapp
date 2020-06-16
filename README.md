@@ -35,7 +35,9 @@ available_input_widgets
 
 
 
-    ['checkbox',
+    ['switch',
+     'checkbox',
+     'text',
      'password',
      'time',
      'date',
@@ -105,6 +107,15 @@ select_or_create(items=['one','two','three'],v_model=['one','two'],multiple=True
 ```
 
 <img alt="Combobox Input" caption="Combobox" src="images/select_or_create.png">
+
+### switch
+
+```
+from vvapp.inputs import switch
+switch(label='Switch example',v_model=True)
+```
+
+<img alt="Switch Input" caption="Switch Input Example" src="images/switch.png">
 
 ### checkbox
 
