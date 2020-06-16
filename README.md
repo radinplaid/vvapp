@@ -39,14 +39,16 @@ available_input_widgets
      'checkbox',
      'text',
      'password',
-     'time',
+     'time_input',
      'date',
+     'date_range',
      'number',
      'range_slider',
      'slider',
      'radio_buttons',
      'select',
-     'select_or_create']
+     'select_or_create',
+     'button']
 
 
 
@@ -286,9 +288,6 @@ button(label='I print `test` on click',
 
 ```
 
-    test
-
-
 <img alt="Button Input Example" caption="Button Input Example" src="images/input_button1.png">
 
 ```
@@ -322,6 +321,34 @@ temp.dates
 
 
     ['2020-01-01', '2020-02-01']
+
+
+
+### color_picker
+
+```
+from vvapp.inputs import color_picker
+temp=color_picker()
+temp
+```
+
+<img alt="Color Picker Input Example" caption="Color Picker Input Example" src="images/color_picker.png">
+
+
+```
+temp.v_model
+```
+
+
+
+
+    {'alpha': 1,
+     'hex': '#FF0000',
+     'hexa': '#FF0000FF',
+     'hsla': {'h': 0, 's': 1, 'l': 0.5, 'a': 1},
+     'hsva': {'h': 0, 's': 1, 'v': 1, 'a': 1},
+     'hue': 0,
+     'rgba': {'r': 255, 'g': 0, 'b': 0, 'a': 1}}
 
 
 

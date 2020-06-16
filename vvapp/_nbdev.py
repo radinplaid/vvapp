@@ -16,6 +16,7 @@ index = {"switch": "00_inputs.ipynb",
          "select": "00_inputs.ipynb",
          "select_or_create": "00_inputs.ipynb",
          "button": "00_inputs.ipynb",
+         "color_picker": "00_inputs.ipynb",
          "PandasTable": "01_outputs.ipynb",
          "markdown": "01_outputs.ipynb"}
 
