@@ -406,3 +406,13 @@ Some body text
 
 <img alt="Output Markdown" caption="Markdown output example" src="images/output_markdown.png">
 
+
+### Snackbar
+
+```
+from vvapp.outputs import info_snackbar
+info_snackbar(message='Message text', color='teal',timeout=10000)
+```
+
+<img alt="Output Snackbar" caption="Snackbar output example" src="images/snackbar.png">
+
