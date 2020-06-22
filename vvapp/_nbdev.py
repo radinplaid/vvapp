@@ -19,7 +19,11 @@ index = {"switch": "00_inputs.ipynb",
          "color_picker": "00_inputs.ipynb",
          "PandasTable": "01_outputs.ipynb",
          "markdown": "01_outputs.ipynb",
-         "info_snackbar": "01_outputs.ipynb"}
+         "info_snackbar": "01_outputs.ipynb",
+         "dialog_button": "01_outputs.ipynb",
+         "container": "01_outputs.ipynb",
+         "row": "01_outputs.ipynb",
+         "column": "01_outputs.ipynb"}
 
 modules = ["inputs.py",
            "outputs.py"]

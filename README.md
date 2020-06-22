@@ -48,7 +48,8 @@ available_input_widgets
      'radio_buttons',
      'select',
      'select_or_create',
-     'button']
+     'button',
+     'color_picker']
 
 
 
@@ -339,19 +340,6 @@ temp
 temp.v_model
 ```
 
-
-
-
-    {'alpha': 1,
-     'hex': '#FF0000',
-     'hexa': '#FF0000FF',
-     'hsla': {'h': 0, 's': 1, 'l': 0.5, 'a': 1},
-     'hsva': {'h': 0, 's': 1, 'v': 1, 'a': 1},
-     'hue': 0,
-     'rgba': {'r': 255, 'g': 0, 'b': 0, 'a': 1}}
-
-
-
 ## Outputs
 
 ### PandasTable
@@ -416,3 +404,57 @@ info_snackbar(message='Message text', color='teal',timeout=10000)
 
 <img alt="Output Snackbar" caption="Snackbar output example" src="images/snackbar.png">
 
+
+### Dialog Button
+
+```
+from vvapp.outputs import dialog_button
+dialog_button(label='My Button',icon=None)
+```
+
+<img alt="Dialog Button Example" caption="Dialog Button Example" src="images/dialog_button.png">
+
+
+### Container
+
+```
+from vvapp.inputs import button
+from vvapp.outputs import container
+container(children=[
+    button(color='red', label='Red'),
+    button(color='blue', label='Blue'),
+    button(color='green', label='Green')
+])
+```
+
+<img alt="Container Output Example" caption="Container Output Example" src="images/container.png">
+
+
+### Row
+
+```
+from vvapp.inputs import button
+from vvapp.outputs import row
+container(children=[
+    row(children=[button(color='red', label='Red')]),
+    row(children=[button(color='blue', label='Blue')]),
+    row(children=[button(color='green', label='Green')])
+])
+```
+
+<img alt="Row Output Example" caption="Row Output Example" src="images/row.png">
+
+
+### Column
+
+```
+from vvapp.inputs import button
+from vvapp.outputs import column
+row(children=[
+    column(order=1, cols=4, children=[button(color='red', label='Red')]),
+    column(order=0, cols=4, children=[button(color='blue', label='Blue')]),
+    column(order=2, cols=4, children=[button(color='green', label='Green')])
+])
+```
+
+<img alt="Column Example" caption="Column Example" src="images/column.png">
