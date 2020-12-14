@@ -11,10 +11,10 @@ entries:
       url: /
     - output: web,pdf
       title: vvapp.inputs
-      url: /inputs
+      url: inputs.html
     - output: web,pdf
       title: vvapp.outputs
-      url: /outputs
+      url: outputs.html
     output: web
     title: vvapp
   output: web

@@ -4,7 +4,6 @@ __all__ = ['PandasTable', 'markdown', 'info_snackbar', 'dialog_button', 'contain
 
 # Cell
 import ipyvuetify
-from nbdev.imports import *
 
 # Cell
 
@@ -88,7 +87,6 @@ class PandasTable(ipyvuetify.VuetifyTemplate):
             data.to_json(orient='records'))
         if title is not None:
             self.title = title
-
 
 # Cell
 

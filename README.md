@@ -27,7 +27,7 @@ There are a few key things to keep in mind when getting up and running with `vva
     * If `hint` is a callable, it must return a string or None; if it returns a string, the input is marked as invalid and the string is displayed
         
 
-```
+```python
 from vvapp.inputs import __all__ as available_input_widgets
 available_input_widgets
 ```
@@ -55,7 +55,7 @@ available_input_widgets
 
 ### text
 
-```
+```python
 from vvapp.inputs import text
 text(label='Text Input',hint='Enter some text',v_model='some text')
 ```
@@ -66,7 +66,7 @@ text(label='Text Input',hint='Enter some text',v_model='some text')
 
 For a select input, the `v_model` can be a list:
 
-```
+```python
 from vvapp.inputs import select
 select(items=['one','two','three'],v_model='two')
 ```
@@ -75,7 +75,7 @@ select(items=['one','two','three'],v_model='two')
 
 ... or a dict where the keys are the labels to be displayed and the values and the values
 
-```
+```python
 select(items={'One':'one','Two':'two','Three':'three'},v_model='two')
 ```
 
@@ -83,14 +83,14 @@ select(items={'One':'one','Two':'two','Three':'three'},v_model='two')
 
 Also, it is possible for multiple items to be selected via the `multiple` prop:
 
-```
+```python
 tmp = select(items={'One':'one','Two':'two','Three':'three'},v_model=['one','two'],multiple=True)
 tmp
 ```
 
 <img alt="Select Input" caption="Multiple Select Input" src="images/select3.png">
 
-```
+```python
 tmp.v_model
 ```
 
@@ -103,7 +103,7 @@ tmp.v_model
 
 ### select_or_create (combobox)
 
-```
+```python
 from vvapp.inputs import select_or_create
 select_or_create(items=['one','two','three'],v_model=['one','two'],multiple=True)
 
@@ -113,7 +113,7 @@ select_or_create(items=['one','two','three'],v_model=['one','two'],multiple=True
 
 ### switch
 
-```
+```python
 from vvapp.inputs import switch
 switch(label='Switch example',v_model=True)
 ```
@@ -122,7 +122,7 @@ switch(label='Switch example',v_model=True)
 
 ### checkbox
 
-```
+```python
 from vvapp.inputs import checkbox
 checkbox(label='Checkbox example',v_model=True)
 ```
@@ -131,7 +131,7 @@ checkbox(label='Checkbox example',v_model=True)
 
 ### slider
 
-```
+```python
 from vvapp.inputs import slider
 slider(label='Slider Example',
        min=0,
@@ -146,7 +146,7 @@ slider(label='Slider Example',
 
 ### range_slider
 
-```
+```python
 from vvapp.inputs import range_slider
 range_slider(min=0,max=100,v_model=[40,60])
 ```
@@ -155,7 +155,7 @@ range_slider(min=0,max=100,v_model=[40,60])
 
 ### radio_buttons
 
-```
+```python
 from vvapp.inputs import radio_buttons
 radio_buttons(choices={
                     'Apple': 'apple',
@@ -170,7 +170,7 @@ radio_buttons(choices={
 
 ### date
 
-```
+```python
 from vvapp.inputs import date
 date(label='Please enter a date (format: YYYY-mm-dd)',
      v_model='2020-04-15',
@@ -181,7 +181,7 @@ date(label='Please enter a date (format: YYYY-mm-dd)',
 
 ### time
 
-```
+```python
 from vvapp.inputs import time_input
 time_input(label='Please enter a time (format: HH:MM)',
      v_model='13:34',
@@ -192,9 +192,28 @@ time_input(label='Please enter a time (format: HH:MM)',
 <img alt="Time Input" caption="Time Input" src="images/input_time.png">
 
 
+### integer
+
+```python
+from vvapp.inputs import integer
+integer(placeholder='Enter an integer',
+     style_='max-width:320px')
+```
+
+`integer` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value` or if the input is not an integer (i.e. a floating point number)
+
+```python
+from vvapp.inputs import integer
+integer(label='Integer Input',
+       v_model=50.123,
+       min_value=0,
+       max_value=100,
+     style_='max-width:320px')
+```
+
 ### number
 
-```
+```python
 from vvapp.inputs import number
 number(placeholder='Enter a number',
      style_='max-width:320px')
@@ -205,7 +224,7 @@ number(placeholder='Enter a number',
 
 `number` inputs have a default validation function that changes the `error` state of the input to True and prints a sensible hint if the value is less than `min_value` or greater than `max_value`
 
-```
+```python
 from vvapp.inputs import number
 number(label='Number Input',
        v_model=123,
@@ -220,7 +239,7 @@ number(label='Number Input',
 
 ### password
 
-```
+```python
 from vvapp.inputs import password
 pw = password(label='Please enter a password',v_model='correcthorsebatterystapler')
 pw
@@ -231,7 +250,7 @@ pw
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
-```
+```python
 pw.v_model
 ```
 
@@ -246,7 +265,7 @@ Here we demonstrate the use of a function to validate the value of the input.
 
 In this example the password must be at least 12 characters, less than 64 characters and include at least one number:
 
-```
+```python
 import re
 def validate_pw(widget_value):
     if widget_value is None:
@@ -273,11 +292,11 @@ pw
 
 ### button
 
-```
+```python
 from vvapp.inputs import button
 ```
 
-```
+```python
 def print_test_on_click(*args):
     print('test')
 
@@ -291,7 +310,7 @@ button(label='I print `test` on click',
 
 <img alt="Button Input Example" caption="Button Input Example" src="images/input_button1.png">
 
-```
+```python
 button(icon='mdi-recycle',
        size='large',
        color='teal',
@@ -305,7 +324,7 @@ button(icon='mdi-recycle',
 
 ### date_range
 
-```
+```python
 from vvapp.inputs import date_range
 temp = date_range(dates=['2020-01-01','2020-02-01'])
 temp
@@ -314,7 +333,7 @@ temp
 <img alt="Date Range Input Example" caption="Date Range Input Example" src="images/daterange.png">
 
 
-```
+```python
 temp.dates
 ```
 
@@ -327,7 +346,7 @@ temp.dates
 
 ### color_picker
 
-```
+```python
 from vvapp.inputs import color_picker
 temp=color_picker()
 temp
@@ -336,7 +355,7 @@ temp
 <img alt="Color Picker Input Example" caption="Color Picker Input Example" src="images/color_picker.png">
 
 
-```
+```python
 temp.v_model
 ```
 
@@ -344,7 +363,7 @@ temp.v_model
 
 ### PandasTable
 
-```
+```python
 import pandas as pd
 from vvapp.outputs import PandasTable
 df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
@@ -356,7 +375,7 @@ PandasTable(data=df,title='My DataFrame')
 
 The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
 
-```
+```python
 import pandas as pd
 from vvapp.outputs import PandasTable
 df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
@@ -366,7 +385,7 @@ PandasTable(data=df,title='My DataFrame')
 <img alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png">
 
 
-```
+```python
 import pandas as pd
 from vvapp.outputs import PandasTable
 PandasTable(data=pd.DataFrame(),title='My DataFrame')
@@ -377,7 +396,7 @@ PandasTable(data=pd.DataFrame(),title='My DataFrame')
 
 ### Markdown
 
-```
+```python
 from vvapp.outputs import markdown 
 
 markdown("""
@@ -397,7 +416,7 @@ Some body text
 
 ### Snackbar
 
-```
+```python
 from vvapp.outputs import info_snackbar
 info_snackbar(message='Message text', color='teal',timeout=10000)
 ```
@@ -407,7 +426,7 @@ info_snackbar(message='Message text', color='teal',timeout=10000)
 
 ### Dialog Button
 
-```
+```python
 from vvapp.outputs import dialog_button
 dialog_button(label='My Button',icon=None)
 ```
@@ -417,7 +436,7 @@ dialog_button(label='My Button',icon=None)
 
 ### Container
 
-```
+```python
 from vvapp.inputs import button
 from vvapp.outputs import container
 container(children=[
@@ -432,7 +451,7 @@ container(children=[
 
 ### Row
 
-```
+```python
 from vvapp.inputs import button
 from vvapp.outputs import row
 container(children=[
@@ -447,7 +466,7 @@ container(children=[
 
 ### Column
 
-```
+```python
 from vvapp.inputs import button
 from vvapp.outputs import column
 row(children=[
