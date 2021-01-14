@@ -8,14 +8,14 @@ import traitlets
 import json
 import base64
 import ipyvuetify
-<<<<<<< HEAD
 import ipywidgets
 from nbdev.imports import *
 import pandas as pd
 from markdown import markdown
 from .inputs import *
-=======
->>>>>>> 062c888a6abcbe980d969fb825309aad0600d356
+
+# Cell
+import ipyvuetify
 
 # Cell
 

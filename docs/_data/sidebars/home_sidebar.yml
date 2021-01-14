@@ -15,12 +15,9 @@ entries:
     - output: web,pdf
       title: vvapp.outputs
       url: outputs.html
-<<<<<<< HEAD
     - output: web,pdf
       title: vvapp.app_templates
       url: app_templates.html
-=======
->>>>>>> 062c888a6abcbe980d969fb825309aad0600d356
     output: web
     title: vvapp
   output: web
