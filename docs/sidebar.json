@@ -1,7 +1,8 @@
 {
   "vvapp": {
     "Overview": "/",
-    "vvapp.inputs": "/inputs",
-    "vvapp.outputs": "/outputs"
+    "vvapp.inputs": "inputs.html",
+    "vvapp.outputs": "outputs.html",
+    "vvapp.app_templates": "app_templates.html"
   }
 }

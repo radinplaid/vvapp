@@ -2,31 +2,33 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"switch": "00_inputs.ipynb",
-         "checkbox": "00_inputs.ipynb",
-         "text": "00_inputs.ipynb",
-         "password": "00_inputs.ipynb",
-         "time_input": "00_inputs.ipynb",
-         "date": "00_inputs.ipynb",
-         "date_range": "00_inputs.ipynb",
-         "number": "00_inputs.ipynb",
-         "range_slider": "00_inputs.ipynb",
-         "slider": "00_inputs.ipynb",
-         "radio_buttons": "00_inputs.ipynb",
-         "select": "00_inputs.ipynb",
-         "select_or_create": "00_inputs.ipynb",
-         "button": "00_inputs.ipynb",
-         "color_picker": "00_inputs.ipynb",
-         "PandasTable": "01_outputs.ipynb",
-         "markdown": "01_outputs.ipynb",
-         "info_snackbar": "01_outputs.ipynb",
-         "dialog_button": "01_outputs.ipynb",
-         "container": "01_outputs.ipynb",
-         "row": "01_outputs.ipynb",
-         "column": "01_outputs.ipynb"}
+index = {"input_switch": "00_inputs.ipynb",
+         "input_checkbox": "00_inputs.ipynb",
+         "input_text": "00_inputs.ipynb",
+         "input_password": "00_inputs.ipynb",
+         "input_time": "00_inputs.ipynb",
+         "input_date": "00_inputs.ipynb",
+         "input_daterange": "00_inputs.ipynb",
+         "input_number": "00_inputs.ipynb",
+         "input_range_slider": "00_inputs.ipynb",
+         "input_slider": "00_inputs.ipynb",
+         "input_radio_buttons": "00_inputs.ipynb",
+         "input_select": "00_inputs.ipynb",
+         "input_select_or_create": "00_inputs.ipynb",
+         "input_button": "00_inputs.ipynb",
+         "input_color_picker": "00_inputs.ipynb",
+         "output_pandas_table": "01_outputs.ipynb",
+         "output_markdown": "01_outputs.ipynb",
+         "output_info_snackbar": "01_outputs.ipynb",
+         "output_dialog_button": "01_outputs.ipynb",
+         "output_container": "01_outputs.ipynb",
+         "output_row": "01_outputs.ipynb",
+         "output_column": "01_outputs.ipynb",
+         "App": "02_app_templates.ipynb"}
 
 modules = ["inputs.py",
-           "outputs.py"]
+           "outputs.py",
+           "app_templates.py"]
 
 doc_url = "https://radinplaid.github.io/vvapp/"
 
