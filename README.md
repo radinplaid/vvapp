@@ -27,7 +27,7 @@ There are a few key things to keep in mind when getting up and running with `vva
     * If `hint` is a callable, it must return a string or None; if it returns a string, the input is marked as invalid and the string is displayed
         
 
-```
+```python
 from vvapp.inputs import __all__ as available_input_widgets
 available_input_widgets
 ```
@@ -92,7 +92,7 @@ tmp
 
 <img alt="Select Input" caption="Multiple Select Input" src="images/select3.png">
 
-```
+```python
 tmp.v_model
 ```
 
@@ -186,8 +186,12 @@ input_time(label='Please enter a time (format: HH:MM)',
 <img alt="Time Input" caption="Time Input" src="images/input_time.png">
 
 
-### number
+### integer
 
+```python
+from vvapp.inputs import integer
+integer(placeholder='Enter an integer',
+     style_='max-width:320px')
 ```
 input_number(placeholder='Enter a number',
      style_='max-width:320px')
@@ -222,7 +226,7 @@ pw
 
 The value of of a vvapp widget is set/accessed by the `v_model` attribute, just like in ipyvuetify
 
-```
+```python
 pw.v_model
 ```
 
@@ -237,7 +241,7 @@ Here we demonstrate the use of a function to validate the value of the input.
 
 In this example the password must be at least 12 characters, less than 64 characters and include at least one number:
 
-```
+```python
 import re
 def validate_pw(widget_value):
     if widget_value is None:
@@ -300,7 +304,7 @@ temp
 <img alt="Date Range Input Example" caption="Date Range Input Example" src="images/daterange.png">
 
 
-```
+```python
 temp.dates
 ```
 
@@ -321,7 +325,7 @@ temp
 <img alt="Color Picker Input Example" caption="Color Picker Input Example" src="images/color_picker.png">
 
 
-```
+```python
 temp.v_model
 ```
 
@@ -351,7 +355,7 @@ from vvapp.outputs import *
 
 ### PandasTable
 
-```
+```python
 import pandas as pd
 df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 output_pandas_table(data=df,title='My DataFrame')
@@ -362,7 +366,7 @@ output_pandas_table(data=df,title='My DataFrame')
 
 The pandas DataFrame output has a nice warning/error display if the search returns zero results or if are no rows in the PandasDataframe:
 
-```
+```python
 import pandas as pd
 df = pd.DataFrame({'a':[1,2,3],'b':[2,3,4]})
 output_pandas_table(data=df,title='My DataFrame')
@@ -371,7 +375,7 @@ output_pandas_table(data=df,title='My DataFrame')
 <img alt="Pandas Dataframe Output No Search Results" caption="Pandas Dataframe Output No Search Results" src="images/output_pandas_table_zeroresults.png">
 
 
-```
+```python
 import pandas as pd
 output_pandas_table(data=pd.DataFrame(),title='My DataFrame')
 ```

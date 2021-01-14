@@ -2,6 +2,7 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
+<<<<<<< HEAD
 index = {"input_switch": "00_inputs.ipynb",
          "input_checkbox": "00_inputs.ipynb",
          "input_text": "00_inputs.ipynb",
@@ -25,6 +26,31 @@ index = {"input_switch": "00_inputs.ipynb",
          "output_row": "01_outputs.ipynb",
          "output_column": "01_outputs.ipynb",
          "App": "02_app_templates.ipynb"}
+=======
+index = {"switch": "00_inputs.ipynb",
+         "checkbox": "00_inputs.ipynb",
+         "text": "00_inputs.ipynb",
+         "password": "00_inputs.ipynb",
+         "time_input": "00_inputs.ipynb",
+         "date": "00_inputs.ipynb",
+         "date_range": "00_inputs.ipynb",
+         "integer": "00_inputs.ipynb",
+         "number": "00_inputs.ipynb",
+         "range_slider": "00_inputs.ipynb",
+         "slider": "00_inputs.ipynb",
+         "radio_buttons": "00_inputs.ipynb",
+         "select": "00_inputs.ipynb",
+         "select_or_create": "00_inputs.ipynb",
+         "button": "00_inputs.ipynb",
+         "color_picker": "00_inputs.ipynb",
+         "PandasTable": "01_outputs.ipynb",
+         "markdown": "01_outputs.ipynb",
+         "info_snackbar": "01_outputs.ipynb",
+         "dialog_button": "01_outputs.ipynb",
+         "container": "01_outputs.ipynb",
+         "row": "01_outputs.ipynb",
+         "column": "01_outputs.ipynb"}
+>>>>>>> 062c888a6abcbe980d969fb825309aad0600d356
 
 modules = ["inputs.py",
            "outputs.py",

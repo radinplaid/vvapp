@@ -2,7 +2,11 @@
   "vvapp": {
     "Overview": "/",
     "vvapp.inputs": "inputs.html",
+<<<<<<< HEAD
     "vvapp.outputs": "outputs.html",
     "vvapp.app_templates": "app_templates.html"
+=======
+    "vvapp.outputs": "outputs.html"
+>>>>>>> 062c888a6abcbe980d969fb825309aad0600d356
   }
 }
